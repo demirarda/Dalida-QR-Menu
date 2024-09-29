@@ -1,0 +1,136 @@
+/* Genel Stiller */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header (Başlık) Stilleri */
+header {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 75px; /* Sabit genişlik */
+    height: auto; /* Yükseklik, genişliğe oranla otomatik ayarlanır */
+    object-fit: contain; /* Logo boyutlandırılırken oranlarının korunması için */
+
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 20px; /* Sosyal medya ikonları küçültüldü */
+    height: 20px;
+}
+
+/* Banner (Yaz Menüsü) Stilleri */
+.summer-menu-banner {
+    background-image: url('../images/arkaplan.png'); /* Buraya arka plan fotoğrafınızın yolu */
+    background-size: cover; /* Fotoğrafın alanı tamamen kaplaması için */
+    background-position: center; /* Fotoğrafın ortalanması için */
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+}
+
+.summer-menu-banner h1 {
+    font-size: 2em; /* Başlık boyutu küçültüldü */
+    margin-bottom: 10px;
+}
+
+.summer-menu-banner p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Yaz Menüsü Listeleme Stili */
+.summer-menu-list {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #333;
+}
+
+.summer-menu-item {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start; /* İçerik ve fotoğrafın yan yana hizalanması */
+    align-items: center;
+    color: #333;
+}
+
+.menu-photo {
+    width: 80px; /* Kare fotoğraf daha küçük hale getirildi */
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.menu-details {
+    flex-grow: 1;
+}
+
+.menu-details h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.menu-details .price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #d9534f; /* Fiyatın kırmızı rengi */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.menu-details p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.summer-menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer Stilleri */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 0.8em;
+}
